@@ -999,6 +999,10 @@ img, video {
   width: 3.5rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-2 {
   width: .5rem;
 }
@@ -1033,10 +1037,6 @@ img, video {
 
 .w-7 {
   width: 1.75rem;
-}
-
-.w-72 {
-  width: 18rem;
 }
 
 .w-8 {
@@ -1095,6 +1095,14 @@ img, video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[3400px\] {
+  width: 3400px;
+}
+
+.w-\[340px\] {
+  width: 340px;
 }
 
 .min-w-10 {
@@ -2263,10 +2271,6 @@ img, video {
   background-color: hsl(var(--nextui-success-50) / var(--nextui-success-50-opacity, var(--tw-bg-opacity)));
 }
 
-.bg-success\/10 {
-  background-color: hsl(var(--nextui-success) / .1);
-}
-
 .bg-success\/20 {
   background-color: hsl(var(--nextui-success) / .2);
 }
@@ -2542,11 +2546,6 @@ img, video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .\!pb-0 {
@@ -4213,6 +4212,12 @@ img, video {
 .before\:bg-danger\/20:before {
   content: var(--tw-content);
   background-color: hsl(var(--nextui-danger) / .2);
+}
+
+.before\:bg-default-200:before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--nextui-default-200) / var(--nextui-default-200-opacity, var(--tw-bg-opacity)));
 }
 
 .before\:bg-default\/60:before {
@@ -5906,10 +5911,6 @@ img, video {
   padding-top: .25rem;
 }
 
-.data-\[active\=true\]\:font-medium[data-active="true"] {
-  font-weight: 500;
-}
-
 .data-\[active\=true\]\:font-semibold[data-active="true"] {
   font-weight: 600;
 }
@@ -5922,11 +5923,6 @@ img, video {
 .data-\[active\=true\]\:text-default-foreground[data-active="true"] {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-default-foreground) / var(--nextui-default-foreground-opacity, var(--tw-text-opacity)));
-}
-
-.data-\[active\=true\]\:text-primary[data-active="true"] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-text-opacity)));
 }
 
 .data-\[active\=true\]\:text-primary-foreground[data-active="true"] {
@@ -6057,6 +6053,11 @@ img, video {
 .data-\[hover\=true\]\:text-default-foreground[data-hover="true"] {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-default-foreground) / var(--nextui-default-foreground-opacity, var(--tw-text-opacity)));
+}
+
+.data-\[hover\=true\]\:text-foreground[data-hover="true"] {
+  --tw-text-opacity: 1;
+  color: hsl(var(--nextui-foreground) / var(--nextui-foreground-opacity, var(--tw-text-opacity)));
 }
 
 .data-\[hover\=true\]\:text-foreground-400[data-hover="true"] {
@@ -6539,6 +6540,11 @@ img, video {
   outline-color: hsl(var(--nextui-warning-foreground) / var(--nextui-warning-foreground-opacity, 1));
 }
 
+.data-\[focus-visible\=true\]\:ring-default-500[data-focus-visible="true"] {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: hsl(var(--nextui-default-500) / var(--nextui-default-500-opacity, var(--tw-ring-opacity)));
+}
+
 .data-\[menu-open\=true\]\:backdrop-blur-xl[data-menu-open="true"] {
   --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -6954,6 +6960,11 @@ img, video {
 .data-\[selectable\=true\]\:focus\:bg-default-100:focus[data-selectable="true"] {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--nextui-default-100) / var(--nextui-default-100-opacity, var(--tw-bg-opacity)));
+}
+
+.data-\[selectable\=true\]\:focus\:bg-default-50:focus[data-selectable="true"] {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--nextui-default-50) / var(--nextui-default-50-opacity, var(--tw-bg-opacity)));
 }
 
 .data-\[selectable\=true\]\:focus\:bg-default\/40:focus[data-selectable="true"] {
@@ -7405,6 +7416,11 @@ img, video {
 .group[data-focus="true"] .group-data-\[focus\=true\]\:border-warning {
   --tw-border-opacity: 1;
   border-color: hsl(var(--nextui-warning) / var(--nextui-warning-opacity, var(--tw-border-opacity)));
+}
+
+.group[data-hover="true"] .group-data-\[hover\=true\]\:border-default-500 {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--nextui-default-500) / var(--nextui-default-500-opacity, var(--tw-border-opacity)));
 }
 
 .group[data-invalid="true"] .group-data-\[invalid\=true\]\:border-danger {
@@ -7867,6 +7883,11 @@ img, video {
   }
 }
 
+.dark\:border-default-200:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--nextui-default-200) / var(--nextui-default-200-opacity, var(--tw-border-opacity)));
+}
+
 .dark\:border-gray-50\/\[\.1\]:is(.dark *) {
   border-color: #f9fafb1a;
 }
@@ -8011,6 +8032,11 @@ img, video {
 .dark\:data-\[hover\=true\]\:bg-danger-50[data-hover="true"]:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--nextui-danger-50) / var(--nextui-danger-50-opacity, var(--tw-bg-opacity)));
+}
+
+.dark\:data-\[hover\=true\]\:bg-default-50[data-hover="true"]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--nextui-default-50) / var(--nextui-default-50-opacity, var(--tw-bg-opacity)));
 }
 
 .dark\:data-\[hover\=true\]\:bg-success-50[data-hover="true"]:is(.dark *) {
@@ -8205,9 +8231,8 @@ img, video {
     width: 700px;
   }
 
-  .md\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:pb-60 {

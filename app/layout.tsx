@@ -1,11 +1,8 @@
 import "@/styles/globals.css";
-import { Analytics } from "@vercel/analytics/react"
-import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-
+import { Analytics } from "@vercel/analytics/react";
+import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
-
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
@@ -17,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 
@@ -39,21 +36,19 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
-        <Analytics/>
+        <Analytics />
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 ">
+            <main className="container mx-auto max-w-7xl pt-16 px-1">
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-              
-                <span className="text-default-600 font-bold text-xs">@2002</span>
-                <p className="text-primary font-bold text-xs ml-1">APL PS</p>
-              
+              <span className="text-default-600 font-bold text-xs">@2002</span>
+              <p className="text-primary font-bold text-xs ml-1">APL PS</p>
             </footer>
           </div>
         </Providers>

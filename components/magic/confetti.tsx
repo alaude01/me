@@ -41,7 +41,6 @@ export function ConfettiSideCannons() {
         onPress={handleClick}
         className="text-sm font-normal text-default-600 bg-default-100"
         startContent={<HeartFilledIcon className="text-danger" />}
-        variant="flat"
       >
         Sponsor
       </Button>

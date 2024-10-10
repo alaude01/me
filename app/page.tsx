@@ -30,7 +30,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="flex-[3_0_300px] relative">
+              <div className="flex-[3_0_300px] relative flex flex-col items-center sm:items-start">
                 <h1 className="md:text-4xl text-2xl font-bold">Phonsing Taleman</h1>
                 <span className="text-xs font-bold text-default-400 ">
                   or you can call me
@@ -61,7 +61,7 @@ export default function Home() {
                   </p>
                 </article>
                 <Divider className="mt-5" />
-               <div className="md:w-[700px] w-[300px] mt-2 flex items-center justify-center">
+               <div className="md:w-[700px] w-[340px] mt-2 mx-auto">
                <TechStack />
                </div>
               </div>
