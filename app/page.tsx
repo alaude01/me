@@ -3,6 +3,7 @@ import { Divider } from "@nextui-org/divider";
 import { Card, CardBody } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
 import { Globe } from "@/components/background/Globe";
+import NextLink from "next/link"
 import WordAnimation from "@/components/background/WordAnimation";
 import TechStack from "@/components/tech/techstack";
 
@@ -54,11 +55,12 @@ export default function Home() {
                   </Chip>
                 </div>
                 <article className="text-pretty mt-5">
-                  <p className="text-default-600 text-sm font-bold indent-5">
+                  <span className="text-default-600 text-sm font-bold indent-5">
                     Hi..👋🏻 ผม พลสิงห์ ตาเละมัน หรือเรียกผมว่า โนอาร์ ก็ได้น้า
                     ผมเป็นนักศึกษามหาวิทยาลัยศรีปทุมสาขาวิศวกรรมคอมพิวเตอร์
-                    มาดูกันว่าในนี้มีอะไรให้เพื่อนๆได้รับชมกันบ้าง 😇
-                  </p>
+                    มาดูกันว่าในนี้มีอะไรให้เพื่อนๆได้รับชมกันบ้าง  <NextLink href="/authentication" className="text-primary text-sm font-bold">Let's go</NextLink>
+                  </span>
+                 
                 </article>
                 <Divider className="mt-5" />
                <div className="md:w-[700px] w-[340px] mt-2 mx-auto">

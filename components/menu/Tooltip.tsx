@@ -17,6 +17,7 @@ export default function ListMenu() {
     <Dropdown
       showArrow
       radius="sm"
+      
       classNames={{
         base: "before:bg-default-200", // change arrow background
         content: "p-0 border-small border-divider bg-background",
@@ -31,12 +32,13 @@ export default function ListMenu() {
           radius="sm"
           endContent={<TiContacts size={22} />}
         >
-          Project
+          Docs
         </Button>
       </DropdownTrigger>
       <DropdownMenu
         aria-label="Custom item styles"
         disabledKeys={["profile"]}
+        
         className="p-3"
         itemClasses={{
           base: [
@@ -56,7 +58,7 @@ export default function ListMenu() {
         <DropdownSection aria-label="Profile & Actions" showDivider>
           <DropdownItem
             key="/"
-            // className="h-14 gap-2"
+            textValue="Phonsing Taleman profile"
             className="opacity-100"
           >
             <User
@@ -72,33 +74,23 @@ export default function ListMenu() {
               }}
             />
           </DropdownItem>
-          <DropdownItem key="authentication">Authentication</DropdownItem>
-          <DropdownItem key="settings">Settings</DropdownItem>
-        </DropdownSection>
-
-        <DropdownSection aria-label="Preferences" showDivider>
-          <DropdownItem
-            isReadOnly
-            key="theme"
-            className="cursor-default"
-            endContent={
-              <select
-                className="z-10 outline-none w-16 py-0.5 rounded-md text-tiny group-data-[hover=true]:border-default-500 border-small border-default-300 dark:border-default-200 bg-transparent text-default-500"
-                id="theme"
-                name="theme"
-              >
-                <option>System</option>
-                <option>Dark</option>
-                <option>Light</option>
-              </select>
-            }
-          >
-            Theme
+          <DropdownItem key="authentication" description="Employess System" textValue="Authentication">
+            <p className=" font-bold">Authentication</p>
+          </DropdownItem>
+          <DropdownItem key="docker" isReadOnly textValue="Docker" >
+          <p className=" font-bold">Docker</p>
+          </DropdownItem>
+          <DropdownItem key="embedded_system" isReadOnly textValue="Embedded System">
+          <p className=" font-bold">Embedded System</p>
+          </DropdownItem>
+          <DropdownItem key="network_monitoring" isReadOnly textValue="Network Monitoring">
+          <p className=" font-bold">Network Monitoring</p>
           </DropdownItem>
         </DropdownSection>
-
         <DropdownSection aria-label="Help & Feedback">
-          <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
+          <DropdownItem key="help_and_feedback" isReadOnly>
+            Help & Feedback
+          </DropdownItem>
         </DropdownSection>
       </DropdownMenu>
     </Dropdown>
