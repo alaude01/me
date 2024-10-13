@@ -2559,11 +2559,6 @@ img, video {
   padding-right: 2rem;
 }
 
-.px-px {
-  padding-left: 1px;
-  padding-right: 1px;
-}
-
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -2690,10 +2685,6 @@ img, video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-px {
-  padding-top: 1px;
 }
 
 .text-left {
@@ -2849,11 +2840,6 @@ img, video {
 .\!text-danger-foreground {
   --tw-text-opacity: 1 !important;
   color: hsl(var(--nextui-danger-foreground) / var(--nextui-danger-foreground-opacity, var(--tw-text-opacity))) !important;
-}
-
-.\!text-default-500 {
-  --tw-text-opacity: 1 !important;
-  color: hsl(var(--nextui-default-500) / var(--nextui-default-500-opacity, var(--tw-text-opacity))) !important;
 }
 
 .text-\[\#F31260\] {
@@ -7629,10 +7615,6 @@ img, video {
 .group[data-selected="true"] .group-data-\[selected\=true\]\:bg-success {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--nextui-success) / var(--nextui-success-opacity, var(--tw-bg-opacity)));
-}
-
-.group[data-selected="true"] .group-data-\[selected\=true\]\:bg-transparent {
-  background-color: #0000;
 }
 
 .group[data-selected="true"] .group-data-\[selected\=true\]\:bg-warning {

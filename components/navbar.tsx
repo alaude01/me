@@ -9,7 +9,7 @@ import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
 import { siteConfig } from "@/config/site";
-// import { ThemeSwitch } from "@/components/theme-switch";
+import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon, SearchIcon } from "@/components/icons";
 import { ConfettiSideCannons } from "./magic/confetti";
 import ListMenu from "./menu/Tooltip";
@@ -50,7 +50,7 @@ export const Navbar = () => {
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
-          {/* <ThemeSwitch /> */}
+          <ThemeSwitch />
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <NavbarItem className="hidden md:flex">
@@ -62,7 +62,7 @@ export const Navbar = () => {
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
-        {/* <ThemeSwitch /> */}
+        <ThemeSwitch />
       </NavbarContent>
     </NextUINavbar>
   );
